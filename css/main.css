@@ -1,19 +1,102 @@
-header {
-  background: #00f7ff;
-  height: 80px;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+  transition: all 0.3s;
 }
-header h1 {
-  color: white;
-  font-size: 65px;
+
+body {
+  box-sizing: border-box;
 }
-@-webkit-keyframes test {
-  0% {
-    width: 100%;
-  }
+
+ul {
+  list-style: none;
 }
-@keyframes test {
-  0% {
-    width: 100%;
-  }
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  color: #767676;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu {
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-around;
+}
+.menu__logo {
+  width: 6em;
+  padding: 0.5em;
+}
+.menu__item {
+  color: #767676;
+  margin: 2rem;
+}
+
+.menu-main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__list-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__link {
+  color: #767676;
+  font-weight: 600;
+}
+
+.menu__link-login {
+  color: #0F68AF;
+}
+.menu__link-login-p {
+  color: #0F68AF;
+  margin: 0em 0.5em 0 0.5em;
+}
+
+.menu-login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-login__basket {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f2f2;
+  height: 100%;
+  margin: 1em;
+  width: 7em;
+}
+.menu-login__basket-ico {
+  width: 2em;
+}
+.menu-login__basket-p {
+  padding: 0.5em;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

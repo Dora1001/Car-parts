@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.menu {
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-around;
+
+    &__logo {
+        width: 6em;
+        padding: 0.5em
+    }
+
+    &__item {
+        color: $colorFontsgray;
+        margin: 2rem;
+    }
+}
+
+.menu-main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.menu__list-item {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.menu__link {
+    color: $colorFontsgray;
+    font-weight: 600;
+}
+
+
+.menu__link-login {
+    color: $colorElemblue;
+
+    &-p {
+        color: $colorElemblue;
+        margin: 0em 0.5em 0 0.5em;
+        }
+}
+
+.menu-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-login__basket {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f2f2;
+    height: 100%;
+    margin: 1em;
+    width: 7em;
+
+
+&-ico {
+    width: 2em;
+}
+
+&-p{
+padding: 0.5em;
+font-weight: 600;
+
+}
+}
+
+
