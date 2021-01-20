@@ -8,6 +8,10 @@
     transition: all 0.3s;
 }
 
+:active, :focus {
+    outline: 0;
+}
+
 
 body {
     box-sizing: border-box;
