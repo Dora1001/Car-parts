@@ -1,25 +1,9 @@
-$color: #00f7ff;
-
-header {
-
-  background: $color;
-  height: 80px;
 
 
-  h1 {
-    color: white;
-    font-size: 65px;
+@import "base/base";
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "base/typography";
 
 
-  }
-
-  @keyframes test {
-    0% {
-      width: 100%;
-
-    }
-
-  }
-}
-
-
+@import "pages/home";
