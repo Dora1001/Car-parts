@@ -50,6 +50,7 @@ p {
 }
 .menu__logo {
   width: 6em;
+  height: 6em;
   padding: 0.5em;
 }
 .menu__item {
