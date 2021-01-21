@@ -6,7 +6,10 @@
 @import "base/typography";
 
 
-@import "pages/home";
-@import "layouts/header";
-@import "layouts/search_form";
-@import "layouts/advert";
+
+@import "layouts/home/header";
+@import "layouts/home/search_form";
+@import "layouts/home/advert";
+@import "layouts/home/footer";
+
+@import "layouts/info_pojazd/search_info";

@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  &__list-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item {
+    font-size: 14px;
+    margin: 1em;
+    color: $colorFontsgray;
+  }
+
+}
