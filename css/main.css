@@ -225,8 +225,6 @@ h1 {
 .search-info {
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-items: center;
   flex-direction: column;
   background-color: #f3f2f2;
 }
@@ -236,7 +234,7 @@ h1 {
   justify-content: flex-start;
   width: 60em;
   align-items: flex-end;
-  margin: 2em;
+  margin: 2em 2em 2em 10%;
 }
 
 .search-info-form__box {
@@ -301,7 +299,7 @@ h1 {
 
 .details-info__span--black {
   padding: 0.8em;
-  margin-left: 9em;
+  margin-left: 10%;
 }
 .details-info__span--grey {
   padding: 0.8em;
@@ -309,6 +307,6 @@ h1 {
 }
 
 .details-info__line {
-  border-left: 1px solid #767676;
+  border-left: 1px solid #f3f2f2;
 }
 /*# sourceMappingURL=main.css.map */
