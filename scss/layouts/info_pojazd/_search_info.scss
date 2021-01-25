@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: center;
   flex-direction: column;
-  background-color:  #f3f2f2;
+  background-color: #f3f2f2;
 }
 
 .search-info-form {
@@ -19,7 +20,7 @@
   flex-direction: column;
 }
 
-.menu-info{
+.menu-info {
   display: flex;
   justify-content: center;
 }
@@ -54,7 +55,7 @@
   background-color: #0F68AF;
   color: white;
   padding: 0.3em 1em 0.45em 1em;
-  border: 0px;
+  border: 0;
   font-size: 15px;
   margin-right: 0.5em;
   font-weight: 700;
@@ -62,3 +63,32 @@
   height: 2em;
 }
 
+.search-info__select-nr {
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: #0F68AF;
+}
+
+.details-info {
+  display: flex;
+  justify-content: start;
+  height: 3em;
+}
+
+.details-info__span {
+
+  &--black {
+    padding: 0.8em;
+    margin-left: 9em;
+  }
+
+  &--grey {
+    padding: 0.8em;
+    color: $colorFontsgray;
+  }
+}
+
+.details-info__line {
+  border-left: 1px solid $colorFontsgray;
+}
