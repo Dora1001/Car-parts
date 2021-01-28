@@ -193,6 +193,9 @@ h1 {
   margin: 0;
   font-weight: 700;
 }
+.search-form__btn:hover, .search-form__btn-sec:hover {
+  background-color: #1177C6;
+}
 
 .search-form__btn-select {
   display: flex;
@@ -205,6 +208,9 @@ h1 {
   font-size: 15px;
   margin: 0;
   font-weight: 700;
+}
+.search-form__btn-select:hover {
+  background-color: #1177C6;
 }
 
 .search-form__box {

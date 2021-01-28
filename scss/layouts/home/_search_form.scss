@@ -37,26 +37,36 @@
 }
 
 .search-form__btn, .search-form__btn-sec {
-  background-color: #0F68AF;
+  background-color: $colorElemblue;
   color: white;
   padding: 0.3em 1em 0.45em 1em;
   border: 0px;
   font-size: 15px;
   margin: 0;
   font-weight: 700;
+
+  &:hover {
+    background-color: #1177C6;
+  }
+
 }
 
 .search-form__btn-select {
   display: flex;
   align-self: flex-end;
   width: 8em;
-  background-color: #0F68AF;
+  background-color: $colorElemblue;
   color: white;
   padding: 0.3em 1em 0.45em 1em;
   border: 0px;
   font-size: 15px;
   margin: 0;
   font-weight: 700;
+
+  &:hover {
+    background-color: #1177C6;
+  }
+  
 }
 
 .search-form__box {
