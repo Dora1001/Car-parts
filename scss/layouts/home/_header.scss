@@ -3,7 +3,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    
 }
 
 .menu {
@@ -14,12 +13,32 @@
     &__logo {
         width: 5.5em;
         height: 5.5em;
-        padding: 0.7em
+        padding: 0.7em;
     }
 
     &__item {
+        position: relative;
         color: $colorFontsgray;
         margin: 2rem;
+        width: 3.7em;
+        text-align: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 0px;
+            width: 0px;
+            height: 3px;
+            background-color: $colorElemblue;
+            transition: width 0.2s;
+            opacity: 0;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            width: 60px;
+        }
     }
 }
 
@@ -31,6 +50,7 @@
 .menu__list-item {
     display: flex;
     flex-direction: row;
+    margin-left: 1em;
 }
 
 .menu__link {
@@ -39,12 +59,19 @@
 }
 
 .menu__link-login {
+    position: relative;
     color: $colorElemblue;
 
     &-p {
         color: $colorElemblue;
         margin: 0em 0.5em 0 0.5em;
-        }
+    }
+
+    &:hover {
+        opacity: 1;
+        background-color: $colorElemblue;
+        color: white;
+    }
 }
 
 .menu-login {
@@ -58,28 +85,35 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #f3f2f2;
     height: 100%;
-    margin: 1em;
+    margin: 0;
     width: 7em;
+	transition: all 0.3s;
+	background-size: 100% 200%; 
+	background-image: linear-gradient(to top, #fff 50%, $colorFontslightgray 50%); 
+    color: #333;
+    
+   
 
+    &:hover {
+        background-position: 0 100%; 
 
-&-ico {
-    width: 2em;
+    }
+
+    &-ico {
+        width: 2em;
+    }
+
+    &-p {
+        padding: 0.5em;
+        font-weight: 600;
+    }
 }
 
-&-p{
-padding: 0.5em;
-font-weight: 600;
-
-}
-}
-
-.header__banner{
+.header__banner {
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../images/header_baner.jpg');
+    background-image: url("../images/header_baner.jpg");
     background-size: cover;
 }
-

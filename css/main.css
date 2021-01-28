@@ -59,8 +59,26 @@ h1 {
   padding: 0.7em;
 }
 .menu__item {
+  position: relative;
   color: #767676;
   margin: 2rem;
+  width: 3.7em;
+  text-align: center;
+}
+.menu__item::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  width: 0px;
+  height: 3px;
+  background-color: #0F68AF;
+  transition: width 0.2s;
+  opacity: 0;
+}
+.menu__item:hover::after {
+  opacity: 1;
+  width: 60px;
 }
 
 .menu-main {
@@ -71,6 +89,7 @@ h1 {
 .menu__list-item {
   display: flex;
   flex-direction: row;
+  margin-left: 1em;
 }
 
 .menu__link {
@@ -79,11 +98,17 @@ h1 {
 }
 
 .menu__link-login {
+  position: relative;
   color: #0F68AF;
 }
 .menu__link-login-p {
   color: #0F68AF;
   margin: 0em 0.5em 0 0.5em;
+}
+.menu__link-login:hover {
+  opacity: 1;
+  background-color: #0F68AF;
+  color: white;
 }
 
 .menu-login {
@@ -97,10 +122,16 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #f3f2f2;
   height: 100%;
-  margin: 1em;
+  margin: 0;
   width: 7em;
+  transition: all 0.3s;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to top, #fff 50%, #f3f2f2 50%);
+  color: #333;
+}
+.menu-login__basket:hover {
+  background-position: 0 100%;
 }
 .menu-login__basket-ico {
   width: 2em;
