@@ -22,6 +22,21 @@
 .menu-info {
   display: flex;
   justify-content: center;
+
+  &__item {
+    margin: 1em;
+    font-weight: 600;
+    color: $colorElemblue;
+    
+  }
+
+  &__links {
+    color: $colorElemblue;
+
+    &:hover {
+      background-color: $colorFontslightgray;
+    }
+  }
 }
 
 .menu-info__nav {
@@ -34,11 +49,6 @@
   flex-direction: row;
 }
 
-.menu-info__item {
-  margin: 1em;
-  font-weight: 600;
-  color: $colorElemblue;
-}
 
 .search-info-form__input {
   padding: 0.4em;
@@ -47,7 +57,6 @@
   border-radius: 0;
   border: 1px solid grey;
   color: $colorFontsgray;
-
 }
 
 .search-info-form__btn {
@@ -76,7 +85,6 @@
 }
 
 .details-info__span {
-
   &--black {
     padding: 0.65em;
     margin-left: 10%;
