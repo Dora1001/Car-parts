@@ -12,6 +12,10 @@
   width: 60em;
   align-items: flex-end;
   margin: 2em 2em 2em 10%;
+
+  &__ico {
+    width: 1.4em;
+  }
 }
 
 .search-info-form__box {
@@ -27,7 +31,6 @@
     margin: 1em;
     font-weight: 600;
     color: $colorElemblue;
-    
   }
 
   &__links {
@@ -49,7 +52,6 @@
   flex-direction: row;
 }
 
-
 .search-info-form__input {
   padding: 0.4em;
   margin: 0;
@@ -62,20 +64,36 @@
 .search-info-form__btn {
   background-color: $colorElemblue;
   color: white;
-  padding: 0.3em 1em 0.45em 1em;
   border: 0;
   font-size: 15px;
   margin-right: 0.5em;
   font-weight: 700;
-  width: 1em;
-  height: 2em;
+  width: 2em;
+  height: 1.94em;
 }
 
 .search-info__select-nr {
+  position: relative;
   margin-left: 2em;
   margin-bottom: 0.5em;
   font-weight: 600;
   color: $colorElemblue;
+
+  &::after {
+    content: "X";
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    background-color: red;
+ 
+    
+    width: 1.3em;
+
+    padding: 0em;
+    margin-left: 0.5em;
+  }
 }
 
 .details-info {
