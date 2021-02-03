@@ -20,7 +20,6 @@
 }
 
 .table-info__box {
-    padding-top: 2em;
     display: flex;
     justify-content: center;
 }
@@ -34,29 +33,24 @@
 .table-info__span {
     width: 20em;
 
-&--header {
-    color: white;
+    &--header {
+        color: white;
+    }
+
+    &--mid {
+        color: black;
+        width: 20em;
+    }
 }
-
-&--mid {
-    color: black;
-    width: 20em;
-}
-
-
-}
-
 
 .table-info {
-background-color: $colorFontslightgray;
+    background-color: $colorFontslightgray;
 
-&__tables {
-    width: 50%;
-    
-}
+    &__tables {
+        width: 50%;
+    }
 }
 
 .table-info__header-sec {
-
-    margin: 3em 0 0 0;
+    margin: 3em 0 2em 0;
 }

@@ -394,7 +394,6 @@ h1 {
 }
 
 .table-info__box {
-  padding-top: 2em;
   display: flex;
   justify-content: center;
 }
@@ -424,6 +423,30 @@ h1 {
 }
 
 .table-info__header-sec {
-  margin: 3em 0 0 0;
+  margin: 3em 0 2em 0;
+}
+
+.tabs-info__nav {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10.111%;
+  justify-content: space-between;
+}
+
+.tabs-info__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.tabs-info__item {
+  color: #0F68AF;
+  font-weight: 600;
+  text-align: center;
+  padding: 1em;
+  border: 1px solid #c2c2c2;
+  flex-grow: 1;
 }
 /*# sourceMappingURL=main.css.map */
