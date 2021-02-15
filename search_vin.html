@@ -94,20 +94,47 @@
 
         <div class="part__details">
             <div class="part__details-header">
-                <span class="part-info__span part-info__span--header">Kod</span>
-                <span class="part-info__span part-info__span--header">Nazwa</span>
+                <span class="part-details__span part-details__span--header">Kod</span>
+                <span class="part-details__span part-details__span--header">Nazwa</span>
             </div>
             <div class="part__details-mid">
                 <span class="part-info__span">0161</span>
                 <span class="part-info__span">Norma spalinowa EU5</span>
-                <button class="part-info-form__btn part-info-form__btn--dark">TAK</button>
-                <button class="part-info-form__btn part-info-form__btn--light">NIE</button>
+                <button class="part-info__btn part-info__btn--dark">TAK</button>
+                <button class="part-info__btn part-info__btn--light">NIE</button>
             </div>
-            
+            <div class="part__details-buttons">
+                <button class="part-info__btn part-info__btn--dark">FILTRUJ</button>
+                <button class="part-info__btn part-info__btn--light">RESETUJ</button>
+            </div>
 
         </div>
     </div>
 
+    <div class="part-info__details-header">
+        <span class="part-info__span part-info__span--header">Nazwa</span>
+        <span class="part-info__span part-info__span--header">Numer części</span>
+        <span class="part-info__span part-info__span--header">Ilość</span>
+        <span class="part-info__span part-info__span--header">Informaje</span>
+        <span class="part-info__span part-info__span--header">Stan</span>
+        <span class="part-info__span part-info__span--header">Cena det. netto/brutto</span>
+        <span class="part-info__span part-info__span--header">Twoja cena netto</span>
+    </div>
+
+    <div class="part-info__details">
+        <button class="part-info__btn part-info__btn--info"><img class="part-info__ico--info" src="./images/info_ico.svg" alt="search_ico"></button>
+        <span class="part-info__span part-info__span--mid">01 Uszczelka</span>
+        <span class="part-info__span part-info__span--mid">1234453</span>
+        <span class="part-info__span part-info__span--mid">brak</span>
+        <span class="part-info__span part-info__span--mid">1</span>
+        <span class="part-info__span part-info__span--mid">2</span>
+        <span class="part-info__span part-info__span--mid">7890zł/<b>8976zł</b></span>
+        <span class="part-info__span part-info__span--mid">6650zł</span>
+
+        <input class="part-info-form__input" type="text" id="nr" name="nr" placeholder="1">
+        <button class="part-info__btn part-info__btn--basket"><img class="part-info__ico--basket" src="./images/basket_ico_white.svg" alt="basket_ico"></button>
+        <button class="part-info__btn part-info__btn--arrow"><img class="part-info__ico--arrow" src="./images/arrow_ico.svg" alt="search_ico"></button>
+    </div>
 
     <footer class="footer">
 

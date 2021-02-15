@@ -14,26 +14,45 @@
     flex-direction: column;
     width: 60em;
 
-&-header {
-    
-    display: flex;
-    padding: 1em;
-    margin-left: 10%;
-    background-color: $colorFontsdarkgray;
-}
+    &-header {
+        display: flex;
+        padding: 1em 0 1em 2em;
+        margin-left: 10%;
+        background-color: $colorFontsdarkgray;
+    }
 
-&-mid {
-   
-    align-items: baseline;
-    display: flex;
-    padding: 1em;
-    margin-left: 10%;
-    background-color: white;
-}
+    &-mid {
+        align-items: baseline;
+        display: flex;
+        padding: 0 0 0 2em;
+        margin-left: 10%;
+        background-color: white;
+    }
+
+    &-buttons {
+        display: flex;
+        padding: 1em;
+        margin-left: 10%;
+        background-color: white;
+    }
 }
 
 .part-info__span {
     width: 15em;
+
+    &--header {
+        color: white;
+        text-align: center;
+    }
+
+    &--mid {
+        color: black;
+        width: 20em;
+    }
+}
+
+.part-details__span {
+    width: 20em;
 
     &--header {
         color: white;
@@ -45,7 +64,7 @@
     }
 }
 
-.part-info-form__btn {
+.part-info__btn {
     color: white;
     border: 0;
     border-radius: 0.2em;
@@ -62,7 +81,67 @@
     &--light {
         background-color: $colorElemblueLight;
     }
+}
+
+.part-info__ico {
+    &--info {
+        width: 2em;
+    }
+
+    &--basket {
+        width: 2em;
+    }
+
+    &--arrow {
+        width: 2em;
+    }
+}
+
+.part-info__btn {
+    &--info, &--basket, &--arrow {
+        background-color: #0f68af;
+        color: white;
+        border: 0;
+        margin-right: 0.5em;
+        padding: 0;
+        width: 4em;
+        height: 2.5em;
+    }
+
 
 }
 
+.part-info__details {
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 1em;
+    margin: 0 10% 0 10%;
+    text-align: center;
+    height: fit-content;
+    border-bottom: 1px solid $colorFontsdarkgray;
+}
 
+.part-info__details-header {
+    background-color: $colorFontsdarkgray;
+    flex-grow: 1;
+    justify-content: space-around;
+    display: flex;
+    padding: 1em 8em 1em 3em;
+    margin: 0 10% 0 10%;
+    height: fit-content;
+    border-bottom: 1px solid $colorFontsdarkgray;
+}
+
+.part-info-form__input {
+    padding-bottom: 0.2em;
+    font-size: 17px;
+    margin: 0.4em;
+    width: 2.2em;
+    height: 2.4em;
+    border-radius: 0.2em;
+    border: 1px solid grey;
+    color: #767676;
+    text-align: center;
+}
