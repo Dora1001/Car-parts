@@ -140,9 +140,12 @@
   width: 100%;
 }
 
-.advert__img {
-
-  width: 1em;
 }
+
+@media (max-width:364px) {
+
+  .search-form__input {
+      width: 21em;
+  }
 
 }
