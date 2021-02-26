@@ -903,7 +903,6 @@ h1 {
   flex-direction: row;
   margin: 4em 5% 0 8em;
   padding: 1em;
-  width: 28%;
   height: 13em;
   background-color: white;
 }
@@ -975,6 +974,27 @@ h1 {
   height: 1.94em;
 }
 
+@media (max-width: 1234px) {
+  .cart-info__wrap {
+    margin: 0;
+    height: 13em;
+  }
+}
+@media (max-width: 1234px) {
+  .cart-info__wrap {
+    flex-direction: column;
+    height: 23em;
+  }
+
+  .cart-info__store {
+    padding-right: 0;
+    border-right: 0px solid #f3f2f2;
+  }
+
+  .cart-info__prices {
+    align-self: center;
+  }
+}
 .part__images {
   display: flex;
 }
