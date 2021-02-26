@@ -124,7 +124,7 @@
     margin: 15px;
     width: 50px;
     height: 35px;
-    background-color: white;
+    background-color: transparent;
     display: none;
 
     & span {
@@ -230,10 +230,10 @@
             position: absolute;
             top: 0;
             left: 10px;
+            padding-top: 8px;
         }
 
         &:hover {
-            // background-position: 0 100%;
             background-color: $colorElemblue;
             color: white;
             margin: 0;
@@ -248,7 +248,12 @@
         &-p {
             padding: 0.5em;
             font-weight: 600;
-            color: #767676;
+            
+
+            &:hover {
+                color: white;
+            }
+
         }
     }
 
@@ -313,6 +318,8 @@
     .header__banner {
         margin-top: 0em;
     }
+
+
 
 }
 

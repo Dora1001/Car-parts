@@ -33,3 +33,27 @@
         }
     }
 }
+
+
+@media (min-width: 820px) and (max-width: 1260px) {
+ 
+    .tabs-info {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 461px) {
+    
+    .tabs-info {
+      margin-left: 0;
+    }
+    
+    .tabs-info__list {
+      flex-direction: column;
+    }
+
+    .table-info__tables {
+        width: auto;
+    }
+    
+    }
