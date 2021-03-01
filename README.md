@@ -1,6 +1,6 @@
 # Car-parts
 
-Only desctop right now
+Desctop and mobile 
 
 Homepage - https://dora1001.github.io/Car-parts/
 
