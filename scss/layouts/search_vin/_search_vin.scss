@@ -98,7 +98,10 @@
 }
 
 .part-info__btn {
-    &--info, &--basket, &--arrow {
+
+    &--info,
+    &--basket,
+    &--arrow {
         background-color: #0f68af;
         color: white;
         border: 0;
@@ -128,7 +131,7 @@
     flex-grow: 1;
     justify-content: space-around;
     display: flex;
-    padding: 1em 8em 1em 3em;
+    padding: 1em 10em 1em 4em;
     margin: 0 10% 0 10%;
     height: fit-content;
     border-bottom: 1px solid $colorFontsdarkgray;
@@ -144,4 +147,132 @@
     border: 1px solid grey;
     color: #767676;
     text-align: center;
+}
+
+.part-info {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+@media (max-width: 1889px) {
+
+    .part-info__details-header {
+        padding: 1em 10em 1em 4em;
+        margin: 0 7% 0 7%;
+
+    }
+
+    .part-info__details {
+        margin: 0 6% 0 6%;
+
+    }
+
+
+
+}
+
+
+@media (max-width: 1551px) {
+
+    .part-info__details-header {
+        padding: 1em 10em 1em 3.5em;
+        margin: 0 2% 0 2%;
+    }
+
+    .part-info__details {
+        margin: 0 1% 0 1%;
+
+    }
+
+    .part__details-header {
+        margin-left: 5%;
+    }
+
+    .part__details-mid {
+        margin-left: 5%;
+    }
+
+    .part__details-buttons {
+        margin-left: 5%;
+    }
+
+}
+
+
+@media (max-width: 1340px) {
+
+    .part {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .part__images {
+        margin-bottom: 2em;
+    }
+
+    .part__details-header {
+        margin-left: 0;
+    }
+
+    .part__details-mid {
+        margin-left: 0
+    }
+
+    .part__details-buttons {
+        margin-left: 0;
+    }
+
+    .part__details {
+        width: 50em;
+    }
+}
+
+
+@media (max-width: 785px) {
+
+
+    .part__details {
+        width: 40em;
+    }
+    // .part-details__span--header {
+    //     width: 10em;
+    // }
+
+    // .part-info__span {
+    //     width: 10em;
+    // }
+
+    .part-info__details-header {
+        width: 770px;
+    }
+
+    .part-info__details {
+        width: 770px;
+    }
+
+
+    .part-info {
+        overflow-x: auto;
+        /* Horizontal */
+    }
+
+}
+
+@media (max-width: 605px) {
+
+    .part__details {
+        width: 30em;
+    }
+}
+
+
+@media (max-width: 461px) {
+
+    .part__details {
+        width: 20em;
+    }
 }
