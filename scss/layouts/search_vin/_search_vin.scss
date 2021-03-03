@@ -150,11 +150,35 @@
 }
 
 .part-info {
-
     display: flex;
     flex-direction: column;
-
 }
+
+.search-vin__row {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5em 5% 0.5em 5%;
+    flex-wrap: wrap;
+}
+
+
+.search-vin__img-link:hover {
+    box-shadow: 0 0 6px rgb(35 173 255);
+}
+
+.search-vin__wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    background-color: $colorFontslightgray;
+}
+
+.search-vin__title {
+    background-color: $colorFontslightgray;
+    padding: 0 10% 2em 10%;
+}
+
 
 
 
@@ -229,22 +253,26 @@
     .part__details {
         width: 50em;
     }
+
+    .search-vin__row {
+        margin: 0.5em 0 0.5em 0;
+    }
+
+
 }
 
+@media (max-width: 1265px) {
+    
+    .search-vin__row {
+        margin: 0.5em 15% 0.5em 15%;
+    }
+}
 
 @media (max-width: 785px) {
-
 
     .part__details {
         width: 40em;
     }
-    // .part-details__span--header {
-    //     width: 10em;
-    // }
-
-    // .part-info__span {
-    //     width: 10em;
-    // }
 
     .part-info__details-header {
         width: 770px;
