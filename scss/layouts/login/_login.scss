@@ -1,0 +1,163 @@
+.login {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f3f2f2;
+
+
+}
+
+.login-form {
+    flex-direction: column;
+    display: flex;
+    width: 23.7em;
+    background-color: white;
+    margin: 4em 2em 4em 0;
+    padding: 2em;
+
+    &__input {
+        padding: 0.4em;
+        margin: 0.5em 0 0.5em 0;
+        width: 22em;
+        border-radius: 0;
+        border: 1px solid grey;
+        color: #767676;
+    }
+
+    &__label {
+        color: #767676;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 0.5em;
+        font-size: 18px;
+        margin-top: 1em;
+    }
+
+    &__btn {
+        display: flex;
+        align-self: flex-end;
+        background-color: #0F68AF;
+        color: white;
+        padding: 0.3em 1em 0.45em 1em;
+        border: 0px;
+        font-size: 15px;
+        margin: 0;
+        font-weight: 700;
+
+        &:hover {
+            background-color: #1177C6;
+        }
+    }
+
+
+    .h2__login {
+        text-align: center;
+        color: $colorElemblue;
+        font-weight: $fontBold;
+    }
+
+    &__reminder {
+        color: $colorElemblue;
+        font-weight: 600;
+        font-size: 13px;
+
+
+        &:hover {
+            color: #1177C6;
+            text-decoration: underline;
+        }
+    }
+
+
+}
+
+.register-form {
+    width: 15em;
+
+    flex-direction: column;
+    display: flex;
+    width: 23.7em;
+    background-color: white;
+    margin: 4em 2em 4em 0;
+    padding: 2em;
+
+    &__input {
+        padding: 0.4em;
+        margin: 0.5em 0 0.5em 0;
+        width: 22em;
+        border-radius: 0;
+        border: 1px solid grey;
+        color: #767676;
+    }
+
+    &__label {
+        color: #767676;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 0.5em;
+        font-size: 18px;
+        margin-top: 1em;
+    }
+
+    &__btn {
+        display: flex;
+        align-self: flex-end;
+        background-color: #0F68AF;
+        color: white;
+        padding: 0.3em 1em 0.45em 1em;
+        border: 0px;
+        font-size: 15px;
+        margin: 1em 0 0 0;
+        font-weight: 700;
+
+        &:hover {
+            background-color: #1177C6;
+        }
+    }
+
+
+    .h2__register {
+        text-align: center;
+        color: $colorElemblue;
+        font-weight: $fontBold;
+    }
+
+    }
+
+
+    @media (max-width: 461px) {
+
+        .register-form {
+            width: 100%;
+
+            margin: 4em 0 0 0;
+        }
+
+        .login-form {
+            width: 100%;
+
+            margin: 4em 0 0 0;
+        }
+
+        .login-form__input {
+
+            width: 100%;
+        }
+
+    }
+
+
+    @media (max-width:600px) {
+
+        .register-form {
+    
+            margin: 4em 0 0 0;
+        }
+
+        .login-form {
+      
+            margin: 4em 0 0 0;
+        }
+
+    }
