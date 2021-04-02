@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>BMW - postaw na jakość</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html"><img class="menu__logo-mobile" src="./images/BMW_logo.svg" alt="BMWlogo"></a>
+        <div class="menu">
+            <nav class="menu-main">
+                <a href="index.html"><img class="menu__logo" src="./images/BMW_logo.svg" alt="BMWlogo"></a>
+                <ul class="menu__list-item">
+                    <li class="menu__item"><a href="#" class="menu__link"> O nas </a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"> Kontakt </a></li>
+                </ul>
+            </nav>
+            <div class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <div class="menu-info">
+                <nav class="menu-info__nav">
+                    <ul class="menu-info__list-item">
+                        <a class="menu-info__links" href="parts.html">
+                            <li class="menu-info__item">
+                                Katalog części
+                            </li>
+                        </a>
+                        <a class="menu-info__links" href="parts.html">
+                            <li class="menu-info__item">
+                                Wyszukaj części
+                            </li>
+                        </a>
+                        <a class="menu-info__links" href="parts.html">
+                            <li class="menu-info__item">
+                                Dane pojazdu
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav class="menu-login">
+                <a class="menu-login__basket" href="checkout.html">
+                    <div class="menu-login__basket">
+                        <img class="menu-login__basket-ico" src="./images/basket_ico.svg" alt="basket_ico">
+                        <p class="menu-login__basket-p">0,00 zł</p>
+                    </div>
+                </a>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+    <section class="basket">
+        <div class="basket__wrap">
+
+            <div class="basket__image"></div>
+
+            <div class="basket__description">
+
+                <div class="basket__title">
+                    <h2 class="basket__title">Nazwa produktu</h2>
+                </div>
+
+                <div class="basket__info">
+
+                    <div class="basket__details">
+                        <h3 class="basket__production"><span
+                                class="basket__production basket__production--bold">PRODUCENT:</span> lorem ipsum</h3>
+                        <h3 class="basket__kod">KOD: 125347845890</h3>
+                    </div>
+
+                    <div class="basket__quantity">
+                        <span class="basket__production basket__production--bold">ILOŚĆ:</span> <input
+                            class="basket__input" type="text" id="password" name="password" placeholder="1">
+                    </div>
+
+                    <div class="basket__price">
+                        <span class="basket__price--netto">345,00zł netto</span>
+                        <span class="basket__price--brutto">380,00zł brutto</span>
+                    </div>
+
+                    <div class="basket__delete">
+                        <img class="basket__delete--img" src="./images/delete_ico.svg" alt="BMW">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="basket__summary">
+            <h2 class="basket__title">Podsumowanie koszyka</h2>
+
+            <span class="basket__summary-price basket__price--netto">345,00zł netto</span>
+            <span class="basket__summary-price basket__price--brutto">380,00zł brutto</span>
+
+            <button class="basket__btn">KONTYNUUJ</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <ul class="footer__list-item">
+            <li class="footer__item">Kontakt</li>
+            <li class="footer__item">O nas</li>
+            <li class="footer__item">Regulamin</li>
+        </ul>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
