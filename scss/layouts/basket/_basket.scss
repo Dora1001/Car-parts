@@ -61,6 +61,12 @@
 
 }
 
+.basket-resume__image {
+    width: 100px;
+    height: 100px;
+    background-color: #f3f2f2;
+}
+
 .basket__wrap {
     position: relative;
     background-color: white;
@@ -68,7 +74,9 @@
     margin: 4em 10em 0 10em;
     padding: 4em;
     box-shadow: 0px 24px 1px -24px #adadad;
+
 }
+
 
 .basket__info {
     display: flex;
@@ -77,6 +85,10 @@
     width: 100%;
     justify-content: space-between;
     background-color: white;
+
+    &--resume {
+        height: 100px;
+    }
 }
 
 .basket__description {
@@ -86,7 +98,7 @@
 }
 
 .basket__details {
-    align-self: baseline;
+    align-self: center;
 }
 
 .basket__quantity {
@@ -96,7 +108,7 @@
 .basket__price {
     display: flex;
     flex-direction: column;
-    align-self: baseline;
+    align-self: center;
     color: #767676;
     font-size: 18px;
 
@@ -137,9 +149,146 @@
     align-items: flex-end;
 }
 
+.basket-resume {
+
+    &__wrap {
+        position: relative;
+        background-color: white;
+        display: flex;
+        margin: 0.1em 10em 0 10em;
+        padding: 4em 4em 4em 4em;
+        box-shadow: 0px 24px 1px -24px #adadad;
+    }
+
+    &__date {
+        color: $colorElemblue;
+    }
+
+    &__summary {
+        background-color: white;
+        display: flex;
+        margin: 0 10em 0 10em;
+        padding: 4em;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    &__delivery {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1em;
+    }
+
+    &__summary-price {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin-left: 1em;
+    }
+
+
+    &__label {
+        margin-left: 1em;
+    }
+
+    &__delivery-price {
+        font-weight: $fontBold;
+        font-size: 22px;
+        margin: 0 1em 0 2em;
+
+    }
+
+    &__adress {
+        display: flex;
+        margin: 0 10em 2em 10em;
+        padding: 0 4em 2em 4em;
+        justify-content: space-between;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+
+    &__adress-form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title-h2 {
+
+        padding: 0 0 1em 0;
+        
+    }
+    
+
+    &__input {
+        padding: 0.4em;
+        margin: 0 0 1em 0;
+        width: 27em;
+        border-radius: 0;
+        border: 1px solid grey;
+        color: #767676;
+
+}
+
+}
+
+.basket-resume__check {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+
+
+    &-img {
+        width: 60px;
+        height: auto;
+        margin: 0 1em 0 1em;
+    }
+
+}
+
+
+
+@media (max-width: 1046px) {
+
+    .basket-resume__summary-price {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 1795px) {
+
+    .basket-resume__summary {
+
+        justify-content: flex-end;
+    }
+
+    .basket-resume__delivery {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3em;
+        margin-bottom: 3em;
+    }
+}
+
+@media (max-width: 1723px) {
+
+    .basket-resume__summary {
+
+        justify-content: space-between;
+    }
+
+}
 
 
 @media (max-width: 1340px) {
+
+    .basket-resume__adress{
+        margin: 0 0.5em 0 0.5em;
+    }
     .basket__wrap {
         margin: 4em 0.5em 0 0.5em;
     }
@@ -148,7 +297,13 @@
         margin: 0 0.5em 4em 0.5em;
     }
 
+    .basket-resume__wrap {
+        margin: 0.1em 0.5em 0 0.5em;
+    }
 
+    .basket-resume__summary {
+        margin: 0 0.5em 0 0.5em;
+    }
 
 }
 
@@ -159,6 +314,10 @@
     }
 
     .basket__wrap {
+        padding: 2em;
+    }
+
+    .basket-resume__wrap {
         padding: 2em;
     }
 
@@ -180,6 +339,11 @@
         flex-wrap: wrap;
     }
 
+    .basket-resume__wrap {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .basket__description {
         width: 100%;
         margin-left: 0;
@@ -187,6 +351,12 @@
 
     .basket__price {
         margin-top: 1.5em;
+    }
+
+
+    .basket-resume__date {
+        display: none;
+
     }
 
 
